@@ -3,7 +3,9 @@ import axios from 'axios';
 
 const AuthContext = createContext(null);
 
-const api = axios.create({ baseURL: '/api' });
+const api = axios.create({
+  baseURL: "https://groceryshoppp.onrender.com"
+});
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
