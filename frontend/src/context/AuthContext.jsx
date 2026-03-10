@@ -4,7 +4,7 @@ import axios from 'axios';
 const AuthContext = createContext(null);
 
 const api = axios.create({
-  baseURL: "https://groceryshoppp.onrender.com"
+  baseURL: "https://groceryshoppp.onrender.com/api"
 });
 
 api.interceptors.request.use((config) => {
